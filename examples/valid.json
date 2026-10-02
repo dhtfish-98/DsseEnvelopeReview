@@ -1,0 +1,17 @@
+{
+  "envelope": {
+    "payloadType": "application/vnd.synthetic.review+json",
+    "payload": "c3ludGhldGljIHBvbGljeSBldmlkZW5jZQ==",
+    "signatures": [
+      {
+        "keyid": "untrusted-hint",
+        "sig": "vaSIVn37zrng/0P8YT8ACKEzryhsYBGsJ3G9IoomxEPnELh4hzk9zIdGfsccmemp9FLOszD+7vF3iDiFy4qQAQ=="
+      }
+    ]
+  },
+  "trusted_keys": [
+    "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAwFXISDprLtARD7xNbBUeGMyzKcrpRSfJh/DgHjuWg28=\n-----END PUBLIC KEY-----\n"
+  ],
+  "expected_payload_type": "application/vnd.synthetic.review+json",
+  "threshold": 1
+}

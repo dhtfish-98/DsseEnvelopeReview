@@ -1,0 +1,30 @@
+{
+  "source_repository": "https://github.com/secure-systems-lab/go-securesystemslib",
+  "source_commit": "2bdfda1553aeb4f67541cb8e6f5ec7b212f4503a",
+  "source_license": "MIT",
+  "source_archive_sha256": "d96408990dd6e9ef7fab30f8a1235f30d3b2f82ba4975429e362d5092b7efa67",
+  "review_focus": [
+    "DSSE envelope/PAE serialization",
+    "key hint versus independent signer threshold"
+  ],
+  "complete_selected_files_retained_in_research_archive": true,
+  "research_archive_path": "identity/upstream/dsse",
+  "selected_files": [
+    {
+      "path": "dsse/envelope.go",
+      "sha256": "9cfc1986d355de9d812d8c97340bfdea818f8925ccb0b55477747d3b85fe1a4f",
+      "bytes": 2385,
+      "lines": 84,
+      "url": "https://github.com/secure-systems-lab/go-securesystemslib/blob/2bdfda1553aeb4f67541cb8e6f5ec7b212f4503a/dsse/envelope.go"
+    },
+    {
+      "path": "dsse/verify.go",
+      "sha256": "7cfd91ec1eae9fefd0f75c9f302c6f72424ded06b15a213d50a23afe23109fe5",
+      "bytes": 3830,
+      "lines": 147,
+      "url": "https://github.com/secure-systems-lab/go-securesystemslib/blob/2bdfda1553aeb4f67541cb8e6f5ec7b212f4503a/dsse/verify.go"
+    }
+  ],
+  "new_implementation_all_source_files_reviewed": true,
+  "whole_upstream_platform_equivalence": false
+}
