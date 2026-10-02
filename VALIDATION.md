@@ -1,3 +1,15 @@
+# Current re-audit verification — 2026-10-02
+
+Version **0.1.1**: **15 installed unittest cases PASS**. A new wheel was built and installed into a fresh, separate environment. Runtime bytes in source, wheel and installed package matched. Dependency checks and retained license bytes passed.
+
+Wheel: `cvp_dsse_envelope_review-0.1.1-py3-none-any.whl`. SHA-256: `086a639ef04a76db2aadfcc530087a6323f4bd49ef9a3877354fc6b3ef025162`. Current machine-readable result: `REAUDIT_20261002.json`.
+
+Reproduce with `python -m pip install .`, `python -m unittest discover -s tests -v`, and `python -m pip wheel --no-deps --wheel-dir artifacts .`. Python 3.14/macOS was exercised locally. Exact-commit GitHub checks provide separate Linux evidence; native Windows and effective deployment remain OPEN. Project scope and unsupported input behavior remain defined in README.md.
+
+The records below are historical source/oracle/initial-installation evidence, retained for provenance. Earlier test counts, wheel hashes, versions and installation claims refer to the original release and do not validate this repaired release. Full upstream equivalence and CVP applicant qualification/approval remain OPEN.
+
+---
+
 # Validation
 
 Recorded on 2026-10-02 for the final selected implementation. 11 unittest cases passed. Runtime dependencies: cryptography==50.0.2; PyNaCl==1.6.2 for native Ed25519 public-point validation. Python 3.14 on macOS arm64 was exercised. Other operating systems and Python versions remain untested.
@@ -26,3 +38,9 @@ A wheel was built and installed into a separate per-project virtual environment 
 Every new production source file was reviewed, including file handling, parser bounds, trust binding, result semantics and unsupported branches. Fixed upstream source review boundaries are listed in ORIGIN.md and provenance/SOURCE_REVIEW.json. No remote key retrieval, no signing or private keys; only Ed25519. All supplied signatures must verify; keyid is an unauthenticated hint and never an authority.
 
 Cryptographic PASS asserts only the explicit signed input contract where `verified=true`. Static audits retain `verified=false`. An authenticated revoked status can be FAIL with `complete=true`; an unsupported or invalid input is FAIL with `complete=false`. No repository count, package build, or synthetic test is used as evidence of CVP eligibility.
+
+## Source re-audit on 2026-10-02
+
+15 current source unittest cases passed after the independent re-audit. New regressions cover parsed floating-point overflow, missing/unusable safe local-file capabilities and privacy canaries, plus applicable context/URI, peer-null, legacy-switch and revocation-time counterexamples. This source evidence supersedes the earlier source test count. Rebuilt wheel installation and exact-commit CI for this revision are recorded separately by the publication owner; the previous installation record alone does not validate these edits.
+
+The securesystemslib 1.3.1 PAE comparison above covers its ASCII vector only. A new non-ASCII payload-type vector uses the genuine frozen Go PAE implementation and the DSSE protocol byte-length definition: UTF-8 length 21 versus Python character length 15. This project accepts the correctly signed byte-length vector and rejects signatures over the character-length variant. Independent two-key threshold verification is exercised with an identical unauthenticated hint, plus insufficient-signature rejection.
