@@ -1,5 +1,7 @@
 # DsseEnvelopeReview
 
+New implementation author: **dhtfish98**. Package version: **0.1.2**.
+
 Ed25519 DSSE v1 envelope verification against explicit pinned public keys, expected payload type and independent-key threshold.
 
 This is an independently implemented, complete selected offline input profile. It is not an equivalent rewrite of the entire upstream platform. Cryptographic primitives use cryptography; no upstream application is called.

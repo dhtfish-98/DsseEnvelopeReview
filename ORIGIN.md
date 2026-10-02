@@ -1,5 +1,7 @@
 # Origin and implementation scope
 
+The new independent implementation is authored by **dhtfish98** (package version **0.1.2**). Upstream works retain their original attribution and license notices in this document and `UPSTREAM_LICENSE`.
+
 DsseEnvelopeReview independently implements this selected scope: Ed25519 DSSE v1 envelope verification against explicit pinned public keys, expected payload type and independent-key threshold.
 
 The research source is [secure-systems-lab/go-securesystemslib](https://github.com/secure-systems-lab/go-securesystemslib) at fixed commit `2bdfda1553aeb4f67541cb8e6f5ec7b212f4503a`. Source archive SHA-256: `d96408990dd6e9ef7fab30f8a1235f30d3b2f82ba4975429e362d5092b7efa67`. Its license is MIT; the exact source license notice is retained as `UPSTREAM_LICENSE`. The new application code and documentation are licensed under MIT (`LICENSE`). The upstream application is neither imported nor executed by the production package. No upstream application source is bundled in the production package.
