@@ -1,0 +1,30 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "DsseEnvelopeReview",
+  "author": "dhtfish98",
+  "kind": "python",
+  "base_public_commit": "67b24e41e8adf2b28d49c2011acfdef171400e70",
+  "restored_inputs": [
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "cb34ec2b8220b78c81384e8f9afd8e620d1a40cafbd0e1dfd59e44375100cc9e"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "16c3ce6e9185f71462820bd0250ce6345626cdf7f6ac27c0188959a534f5ba5b"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "8f0af637f5f419098b1e6da14c47b821b994c737d12cfda05b966c2f21c2a158"
+    }
+  ],
+  "platform_entries": []
+}
