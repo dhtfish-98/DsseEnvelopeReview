@@ -2,7 +2,7 @@
 
 # DsseEnvelopeReview
 
-New implementation author: **dhtfish98**. Package version: **0.1.2**.
+New implementation author: **dhtfish98**. Package version: **0.1.3**.
 
 Ed25519 DSSE v1 envelope verification against explicit pinned public keys, expected payload type and independent-key threshold.
 
